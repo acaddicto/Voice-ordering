@@ -52,7 +52,7 @@ fastify.all('/incoming-call', async (request, reply) => {
                           <Response>
                               <Say> </Say>
                               <Pause length="1"/>
-                              <Say>O.K. you can start talking!</Say>
+                              <Say> </Say>
                               <Connect>
                                   <Stream url="wss://${request.headers.host}/media-stream" />
                               </Connect>
